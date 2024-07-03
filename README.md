@@ -59,7 +59,7 @@ Pixel Composer을 재시작 해주시면 됩니다.
 `C:\Users\user\AppData\Local\PixelComposer\Welcome files\Getting started`에  
 내용물을 집어넣습니다.  
 
-처음 프로그램을 실행시 나오는 스플래시 화면( 좌특 상단 `파일 / 스플레시화면` 에서도 열 수 있음 )  
+처음 프로그램을 실행시 나오는 스플래시 화면( 좌측 상단 `파일 / 스플레시화면` 에서도 열 수 있음 )  
 에서 열 수 있습니다.
 ![](/img/src2024-07-03%20230635.png)
 
