@@ -49,6 +49,21 @@
 좌측 패널에 `Interface`에서 `Interface Language`에서 ko 선택 후  
 Pixel Composer을 재시작 해주시면 됩니다.
 
+</br>
+
+## 기초 사용 가이드 한국어 적용
+> 한국어 패치를 먼저 적용해야 보입니다.  
+> 처음 시작시 보시는걸 추천드립니다.
+
+[이 파일](https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/raw/main/Getting%20started.zip)을 먼저 다운로드 한 후 zip압축을 푼다음  
+`C:\Users\user\AppData\Local\PixelComposer\Welcome files\Getting started`에  
+내용물을 집어넣습니다.  
+
+처음 프로그램을 실행시 나오는 스플래시 화면( 좌특 상단 `파일 / 스플레시화면` 에서도 열 수 있음 )  
+에서 열 수 있습니다.
+![](/img/src2024-07-03%20230635.png)
+
+
 
 </br>
 </br>
