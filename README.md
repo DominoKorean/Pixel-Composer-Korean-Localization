@@ -23,7 +23,10 @@
     * [X] words.json
     * [ ] nodes.json
 
-* 문서 번역 ( 진행 안됨 )
+* 문서 번역
+  * [X] Getting started
+  * [ ] [공식 문서](https://pixel-composer-doc.readthedocs.io)
+
 * 영상 번역 ( 진행 안됨 )
 
 
