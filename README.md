@@ -1,4 +1,6 @@
-![](/img/ko_banner.png)
+<p align="center">
+  <img src="https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/raw/main/img/ko_banner.png" alt="Pixel Composer"/>
+</p>
 
 # Pixel-Composer-Korean-Localization
 [Pixel Composer](https://github.com/Ttanasart-pt/Pixel-Composer)의 번역작업 및 공식 문서, 영상등의 한국어 번역작업을 위한 레퍼지토리입니다.
