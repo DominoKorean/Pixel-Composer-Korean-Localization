@@ -3,452 +3,452 @@
     "tooltip":"",
     "outputs":[
       {
-        "tooltip":"",
-        "name":"Surface out"
+        "tooltip": "",
+        "name": "표면 출력"
       }
     ],
-    "inputs":[
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Surface in"
+        "tooltip": "",
+        "name": "표면 입력"
       },
       {
-        "tooltip":"",
-        "name":"Active"
+        "tooltip": "",
+        "name": "활성화"
       },
       {
-        "tooltip":"",
-        "display_data":[
+        "tooltip": "",
+        "display_data": [
           {
-            "data":"Arc",
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_bend_type)",
-            "spr_ind":0.0,
-            "spr_blend":9404030.0,
-            "name":"Arc"
+            "data": "아치",
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_bend_type)",
+            "spr_ind": 0.0,
+            "spr_blend": 9404030.0,
+            "name": "아치"
           },
           {
-            "data":"Wave",
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_bend_type)",
-            "spr_ind":1.0,
-            "spr_blend":9404030.0,
-            "name":"Wave"
+            "data": "파도",
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_bend_type)",
+            "spr_ind": 1.0,
+            "spr_blend": 9404030.0,
+            "name": "파도"
           }
         ],
-        "name":"Type"
+        "name": "유형"
       },
       {
-        "tooltip":"",
-        "display_data":[
+        "tooltip": "",
+        "display_data": [
           "x",
           "y"
         ],
-        "name":"Axis"
+        "name": "축"
       },
       {
-        "tooltip":"",
-        "name":"Amount"
+        "tooltip": "",
+        "name": "양"
       },
       {
-        "tooltip":"",
-        "name":"Scale"
+        "tooltip": "",
+        "name": "크기"
       }
     ],
-    "name":"Bend"
+    "name": "굽힘"
   },
-  "Node_Bevel":{
-    "tooltip":"Apply 2D bevel on the image.",
-    "outputs":[
+  "Node_Bevel": {
+    "tooltip": "이미지에 2D 베벨을 적용합니다.",
+    "outputs": [
       {
-        "tooltip":"",
-        "name":"Surface out"
+        "tooltip": "",
+        "name": "표면 베벨"
       }
     ],
-    "inputs":[
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Surface in"
+        "tooltip": "",
+        "name": "표면 입력"
       },
       {
-        "tooltip":"",
-        "name":"Height"
+        "tooltip": "",
+        "name": "높이"
       },
       {
-        "tooltip":"",
-        "name":"Shift"
+        "tooltip": "",
+        "name": "이동"
       },
       {
-        "tooltip":"",
-        "name":"Scale"
+        "tooltip": "",
+        "name": "크기"
       },
       {
-        "tooltip":"",
-        "display_data":[
+        "tooltip": "",
+        "display_data": [
           {
-            "data":"Linear",
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_curve)",
-            "spr_ind":2.0,
-            "spr_blend":9404030.0,
-            "name":"Linear"
+            "data": "선형",
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_curve)",
+            "spr_ind": 2.0,
+            "spr_blend": 9404030.0,
+            "name": "선형"
           },
           {
-            "data":"Smooth",
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_curve)",
-            "spr_ind":4.0,
-            "spr_blend":9404030.0,
-            "name":"Smooth"
+            "data": "부드럽게",
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_curve)",
+            "spr_ind": 4.0,
+            "spr_blend": 9404030.0,
+            "name": "부드럽게"
           },
           {
-            "data":"Circular",
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_curve)",
-            "spr_ind":5.0,
-            "spr_blend":9404030.0,
-            "name":"Circular"
+            "data": "원형",
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_curve)",
+            "spr_ind": 5.0,
+            "spr_blend": 9404030.0,
+            "name": "원형"
           }
         ],
-        "name":"Slope"
+        "name": "경사"
       },
       {
-        "tooltip":"",
-        "name":"Mask"
+        "tooltip": "",
+        "name": "마스크"
       },
       {
-        "tooltip":"",
-        "name":"Mix"
+        "tooltip": "",
+        "name": "믹스"
       },
       {
-        "tooltip":"",
-        "name":"Active"
+        "tooltip": "",
+        "name": "활성화"
       },
       {
-        "tooltip":"How to deal with pixel outside the surface.\n    - Empty: Use empty pixel\n    - Clamp: Repeat edge pixel\n    - Repeat: Repeat texture.",
-        "display_data":[
-          "Empty",
-          "Clamp",
-          "Repeat"
+        "tooltip": "표면 외부의 픽셀을 처리하는 방법.\n- 빈 픽셀: 빈 픽셀 사용\n- 고정: 가장자리 픽셀 반복\n- 반복: 텍스처 반복",
+        "display_data": [
+          "빈 픽셀",
+          "고정",
+          "반복"
         ],
-        "name":"Oversample mode"
+        "name": "오버샘플 모드"
       },
       {
-        "tooltip":"",
-        "name":"Invert mask"
+        "tooltip": "",
+        "name": "마스크 반전"
       },
       {
-        "tooltip":"",
-        "name":"Mask feather"
+        "tooltip": "",
+        "name": "마스크 페더"
       },
       {
-        "tooltip":"",
-        "name":"Height map"
+        "tooltip": "",
+        "name": "높이 맵"
       }
     ],
-    "name":"Bevel"
+    "name":"베벨"
   },
   "Node_Export":{
-    "tooltip":"Export image, image array to file, image sequence, animation.",
-    "outputs":[
-      {
-        "tooltip":"",
-        "name":"Loop exit"
-      },
-      {
-        "tooltip":"",
-        "name":"Preview"
+      "tooltip": "이미지, 이미지 배열을 파일, 이미지 시퀀스, 애니메이션으로 내보냅니다.",
+      "outputs": [
+        {
+          "tooltip": "",
+          "name": "루프 종료"
+        },
+        {
+          "tooltip": "",
+          "name": "미리보기"
+        }
+      ],
+      "inputs": [
+        {
+          "tooltip": "",
+          "name": "표면"
+        },
+        {
+          "tooltip": "",
+          "name": "경로"
+        },
+        {
+          "tooltip": "",
+          "name": "템플릿"
+        },
+        {
+          "tooltip": "",
+          "display_data": [
+            "단일 이미지",
+            "이미지 시퀀스",
+            "애니메이션"
+          ],
+          "name": "유형"
+        },
+        {
+          "tooltip": "",
+          "name": "템플릿 가이드"
+        },
+        {
+          "tooltip": "",
+          "name": "루프"
+        },
+        {
+          "tooltip": "",
+          "name": "프레임 최적화"
+        },
+        {
+          "tooltip": "",
+          "name": "컬러 병합"
+        },
+        {
+          "tooltip": "",
+          "name": "프레임 속도"
+        },
+        {
+          "tooltip": "",
+          "display_data": [
+            ".png",
+            ".jpg",
+            ".webp"
+          ],
+          "name": "포맷"
+        },
+        {
+          "tooltip": "",
+          "name": "품질"
+        },
+        {
+          "tooltip": "",
+          "name": "시퀀스 시작"
+        },
+        {
+          "tooltip": "",
+          "name": "프레임 범위"
+        },
+        {
+          "tooltip": "",
+          "display_data": [
+            "INDEX4",
+            "INDEX8",
+            "기본값 (PNG32)"
+          ],
+          "name": "서브포맷"
+        },
+        {
+          "tooltip": "",
+          "name": "프레임 스텝"
+        },
+        {
+          "tooltip": "",
+          "name": "사용자 정의 범위"
       }
     ],
-    "inputs":[
-      {
-        "tooltip":"",
-        "name":"Surface"
-      },
-      {
-        "tooltip":"",
-        "name":"Paths"
-      },
-      {
-        "tooltip":"",
-        "name":"Template"
-      },
-      {
-        "tooltip":"",
-        "display_data":[
-          "Single image",
-          "Image sequence",
-          "Animation"
-        ],
-        "name":"Type"
-      },
-      {
-        "tooltip":"",
-        "name":"Template guides"
-      },
-      {
-        "tooltip":"",
-        "name":"Loop"
-      },
-      {
-        "tooltip":"",
-        "name":"Frame optimization"
-      },
-      {
-        "tooltip":"",
-        "name":"Color merge"
-      },
-      {
-        "tooltip":"",
-        "name":"Framerate"
-      },
-      {
-        "tooltip":"",
-        "display_data":[
-          ".png",
-          ".jpg",
-          ".webp"
-        ],
-        "name":"Format"
-      },
-      {
-        "tooltip":"",
-        "name":"Quality"
-      },
-      {
-        "tooltip":"",
-        "name":"Sequence begin"
-      },
-      {
-        "tooltip":"",
-        "name":"Frame range"
-      },
-      {
-        "tooltip":"",
-        "display_data":[
-          "INDEX4",
-          "INDEX8",
-          "Default (PNG32)"
-        ],
-        "name":"Subformat"
-      },
-      {
-        "tooltip":"",
-        "name":"Frame step"
-      },
-      {
-        "tooltip":"",
-        "name":"Custom Range"
-      }
-    ],
-    "name":"Export"
+    "name":"내보내기"
   },
-  "Node_MK_Flare":{
-    "tooltip":"",
-    "outputs":[
+  "Node_MK_Flare": {
+    "tooltip": "",
+    "outputs": [
       {
-        "tooltip":"",
-        "name":"Surface out"
+        "tooltip": "",
+        "name": "표면 출력"
       },
       {
-        "tooltip":"",
-        "name":"Light only"
+        "tooltip": "",
+        "name": "빛만"
       }
     ],
-    "inputs":[
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Background"
+        "tooltip": "",
+        "name": "배경"
       },
       {
-        "tooltip":"",
-        "name":"Origin"
+        "tooltip": "",
+        "name": "원점"
       },
       {
-        "tooltip":"",
-        "name":"Dimension"
+        "tooltip": "",
+        "name": "크기"
       },
       {
-        "tooltip":"",
-        "name":"Scale"
+        "tooltip": "",
+        "name": "스케일"
       },
       {
-        "tooltip":"",
-        "name":"Alpha"
+        "tooltip": "",
+        "name": "알파"
       },
       {
-        "tooltip":"",
-        "name":"Flares"
+        "tooltip": "",
+        "name": "플레어"
       },
       {
-        "tooltip":"",
-        "name":"Focus"
+        "tooltip": "",
+        "name": "초점"
       }
     ],
-    "name":"MK Lens Flare"
+    "name": "MK 렌즈 플레어"
   },
-  "Node_Canvas":{
-    "tooltip":"Draw on surface using brush, eraser, etc.",
-    "outputs":[
+  "Node_Canvas": {
+    "tooltip": "브러시, 지우개 등을 사용하여 표면에 그립니다.",
+    "outputs": [
       {
-        "tooltip":"",
-        "name":"Surface out"
+        "tooltip": "",
+        "name": "표면 출력"
       }
     ],
-    "inputs":[
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Dimension"
+        "tooltip": "",
+        "name": "크기"
       },
       {
-        "tooltip":"",
-        "name":"Color"
+        "tooltip": "",
+        "name": "색상"
       },
       {
-        "tooltip":"",
-        "name":"Brush size"
+        "tooltip": "",
+        "name": "브러시 크기"
       },
       {
-        "tooltip":"",
-        "name":"Fill threshold"
+        "tooltip": "",
+        "name": "채우기 임계값"
       },
       {
-        "tooltip":"",
-        "display_data":[
-          "4 connect",
-          "8 connect",
-          "Entire canvas"
+        "tooltip": "",
+        "display_data": [
+          "4 연결",
+          "8 연결",
+          "전체 캔버스"
         ],
-        "name":"Fill type"
+        "name": "채우기 유형"
       },
       {
-        "tooltip":"",
-        "name":"Draw preview overlay"
+        "tooltip": "",
+        "name": "미리보기 오버레이 그리기"
       },
       {
-        "tooltip":"",
-        "name":"Brush"
+        "tooltip": "",
+        "name": "브러시"
       },
       {
-        "tooltip":"",
-        "name":"Surface amount"
+        "tooltip": "",
+        "name": "표면 양"
       },
       {
-        "tooltip":"",
-        "name":"Background"
+        "tooltip": "",
+        "name": "배경"
       },
       {
-        "tooltip":"",
-        "name":"Background alpha"
+        "tooltip": "",
+        "name": "배경 알파"
       },
       {
-        "tooltip":"",
-        "name":"Render background"
+        "tooltip": "",
+        "name": "배경 렌더링"
       },
       {
-        "tooltip":"",
-        "name":"Alpha"
+        "tooltip": "",
+        "name": "알파"
       },
       {
-        "tooltip":"",
-        "name":"Frames animation"
+        "tooltip": "",
+        "name": "프레임 애니메이션"
       },
       {
-        "tooltip":"",
-        "name":"Animation speed"
+        "tooltip": "",
+        "name": "애니메이션 속도"
       },
       {
-        "tooltip":"",
-        "name":"Use background dimension"
+        "tooltip": "",
+        "name": "배경 크기 사용"
       },
       {
-        "tooltip":"",
-        "name":"Brush distance"
+        "tooltip": "",
+        "name": "브러시 거리"
       },
       {
-        "tooltip":"",
-        "name":"Rotate brush by direction"
+        "tooltip": "",
+        "name": "방향에 따라 브러시 회전"
       },
       {
-        "tooltip":"",
-        "name":"Random direction"
+        "tooltip": "",
+        "name": "무작위 방향"
       }
     ],
-    "name":"Canvas"
+    "name": "캔버스"
   },
-  "Node_Mesh_Warp":{
-    "tooltip":"Wrap image by converting it to mesh, and using control points.",
-    "outputs":[
+  "Node_Mesh_Warp": {
+    "tooltip": "이미지를 메시로 변환하고 제어점을 사용하여 이미지 왜곡.",
+    "outputs": [
       {
-        "tooltip":"",
-        "name":"Surface out"
+        "tooltip": "",
+        "name": "표면 출력"
       },
       {
-        "tooltip":"",
-        "name":"Mesh data"
+        "tooltip": "",
+        "name": "메시 데이터"
       }
     ],
-    "inputs":[
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Surface in"
+        "tooltip": "",
+        "name": "표면 입력"
       },
       {
-        "tooltip":"Amount of grid subdivision. Higher number means more grid, detail.",
-        "name":"Sample"
+        "tooltip": "그리드 세분화 정도. 숫자가 클수록 더 많은 그리드와 세부 사항.",
+        "name": "샘플"
       },
       {
-        "tooltip":"",
-        "name":"Spring Force"
+        "tooltip": "",
+        "name": "스프링 힘"
       },
       {
-        "tooltip":"",
-        "name":"Mesh"
+        "tooltip": "",
+        "name": "메시"
       },
       {
-        "tooltip":"Include diagonal link to prevent drastic grid deformation.",
-        "name":"Diagonal Link"
+        "tooltip": "극단적인 그리드 변형을 방지하기 위해 대각선 링크 포함.",
+        "name": "대각선 링크"
       },
       {
-        "tooltip":"",
-        "name":"Active"
+        "tooltip": "",
+        "name": "활성화"
       },
       {
-        "tooltip":"Link length preservation, setting it to 1 will prevent any stretching, contraction.",
-        "name":"Link Strength"
+        "tooltip": "링크 길이 보존, 1로 설정하면 모든 스트레칭과 수축을 방지.",
+        "name": "링크 강도"
       },
       {
-        "tooltip":"",
-        "name":"Full Mesh"
+        "tooltip": "",
+        "name": "전체 메시"
       },
       {
-        "tooltip":"",
-        "display_data":[
+        "tooltip": "",
+        "display_data": [
           {
-            "data":"Grid",
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_mesh_type)",
-            "spr_ind":0.0,
-            "spr_blend":9404030.0,
-            "name":"Grid"
+            "data": "그리드",
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_mesh_type)",
+            "spr_ind": 0.0,
+            "spr_blend": 9404030.0,
+            "name": "그리드"
           },
           {
-            "data":"Custom",
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_mesh_type)",
-            "spr_ind":1.0,
-            "spr_blend":9404030.0,
-            "name":"Custom"
+            "data": "커스텀",
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_mesh_type)",
+            "spr_ind": 1.0,
+            "spr_blend": 9404030.0,
+            "name": "커스텀"
           }
         ],
-        "name":"Mesh Type"
+        "name": "메시 유형"
       },
       {
-        "tooltip":"",
-        "name":"Seed"
+        "tooltip": "",
+        "name": "시드"
       }
     ],
-    "name":"Mesh Warp"
+    "name": "메시 왜곡"
   },
   "Node_Feedback_Inline":{
     "tooltip":"",
