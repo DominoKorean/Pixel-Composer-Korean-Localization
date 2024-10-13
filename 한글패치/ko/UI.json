@@ -1,13 +1,12 @@
 {
-    "safe_mode": "안전 모드",
 
     "anim_length": "애니메이션 길이",
     "anim_frame_rate": "미리보기 프레임 속도",
     "anim_on_end": "끝날 때",
 
-    "anim_scale_title": "애니메이션 스케일러",
+    "anim_scale_title": "애니메이션 크기조절",
     "anim_scale_target_frame_length": "목표 프레임 길이",
-    "anim_scale_scale_factor": "스케일 팩터: ",
+    "anim_scale_scale_factor": "크기 팩터: ",
 
     "anim_interpolation": "보간 곡선",
 
@@ -96,7 +95,7 @@
     "pref_reset_colors": "색상 재설정",
 
     "pref_show_welcome_screen": "환영 화면 표시",
-    "pref_gui_scaling": "GUI 스케일링",
+    "pref_gui_scaling": "GUI 크기조절",
     "pref_double_click_delay": "더블 클릭 지연",
     "pref_keyboard_hold_start": "키보드 홀드 시작",
     "pref_keyboard_repeat_delay": "키보드 반복 지연",
@@ -140,7 +139,7 @@
     "panel_menu_show_grid": "그리드 표시",
     "panel_menu_grid_setting": "그리드 설정",
     "panel_menu_animation_setting": "애니메이션 설정",
-    "panel_menu_animation_scaler": "애니메이션 스케일러",
+    "panel_menu_animation_scaler": "애니메이션 크기조절",
     "panel_menu_render_all_nodes": "모든 노드 렌더링",
     "panel_menu_execute_exports": "모든 내보내기 노드 실행",
     "panel_menu_test_load_all": "모든 현재 컬렉션 로드",
@@ -151,11 +150,11 @@
     "panel_menu_test_crash": "강제 충돌",
     "panel_menu_test_load_nodes": "모든 노드 로드",
     "panel_menu_newer": "새 버전 사용 가능",
-    "panel_menu_help_video": "튜토리얼 비디오",
+    "panel_menu_help_video": "튜토리얼 영상",
     "panel_menu_help_wiki": "커뮤니티 위키",
     "panel_menu_local_directory": "로컬 디렉토리 열기",
     "panel_menu_autosave_directory": "자동 저장 디렉토리 열기",
-    "panel_menu_reset_default": "기본 컬렉션, 자산 재설정",
+    "panel_menu_reset_default": "기본 컬렉션, 에셋 재설정",
     "panel_menu_itch": "itch.io 페이지",
     "panel_menu_steam": "스팀 페이지",
     "panel_menu_auto_save_folder": "자동 저장 폴더 열기",
@@ -233,7 +232,7 @@
     "panel_animation_previous_frame": "이전 프레임",
     "panel_animation_next_frame": "다음 프레임",
     "panel_animation_animation_settings": "애니메이션 설정",
-    "panel_animation_scale_animation": "애니메이션 스케일",
+    "panel_animation_scale_animation": "애니메이션 크기",
     "panel_animation_hide_node": "컨텍스트 외부 노드 숨기기",
     "panel_animation_show_node": "컨텍스트 외부 노드 표시",
     "panel_animation_name_full": "전체 이름 표시",
@@ -277,7 +276,7 @@
 
     "palette_change_preview_size": "미리보기 크기 변경",
 
-    "graph_export_scale": "스케일",
+    "graph_export_scale": "크기",
     "graph_export_padding": "패딩",
     "graph_export_solid_background": "단색 배경",
     "graph_export_background_color": "배경 색상",
@@ -330,7 +329,7 @@
     "graph_grid_settings": "그리드 설정",
     "graph_view_settings": "보기 설정",
     "graph_visibility_avoid_label": "레이블 피하기",
-    "graph_visibility_preview_scale": "미리보기 스케일",
+    "graph_visibility_preview_scale": "미리보기 크기",
     "onion_skin_frame_step": "프레임 스텝",
     "onion_skin_post_color": "포스트 색상",
     "onion_skin_pre_color": "프리 색상",
@@ -404,8 +403,6 @@
     "pref_ui_font": "UI 폰트 덮어쓰기",
     "panel_menu_node_credit": "노드 크레딧 다이얼로그",
 
-    "panel_collection_update_thumbnail": "썸네일 업데이트",
-    "panel_collection_workshop_upload": "스팀 워크샵에 업로드",
     "panel_graph_toggle_parameter": "노드 매개변수 전환",
     "panel_graph_group_require_shift": "그룹에 들어가려면 Shift 키를 누르세요",
     "pref_add_node_remember": "노드 위치 추가 기억",
@@ -424,6 +421,15 @@
     "toggle_parameters": "매개변수 전환",
     "panel_driver": "드라이버...",
     "panel_preview_lock_preview": "미리보기 노드 잠금",
+
+    // 1.16
+    "global_variables": "전역 변수",
+    "panel_animation_keyframe_edit": "값 편집...",
+    "panel_graph_hide_disconnected": "연결되지 않은 접점 숨기기",
+    "panel_graph_tunnel": "터널 생성",
+    "art_by_kenney": "Kenney의 아트",
+    "panel_menu_reset_layout": "레이아웃 재설정",
+    "panel_graph_toggle_minimap": "미니맵 전환",
 
     "": ""
 }
