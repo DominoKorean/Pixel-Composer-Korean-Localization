@@ -65,9 +65,9 @@ Pixel Composer을 재시작 해주시면 됩니다.
 > 한국어 패치를 먼저 적용해야 보입니다.  
 > 기본 영어 인터페이스 / 한국어 패치 인터페이스를 둘다 고려해 번역되었습니다.
 
-1. [Realese](https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/releases)에서 **시작하기.zip**를 다운로드합니다.
-2. 압축을 풀고 `C:\Users\user\AppData\Local\PixelComposer\Welcome files\Getting started` 에  
-내용물을 집어넣습니다.  
+1. [Realese](https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/releases)에서 **Getting started_ko.zip**를 다운로드합니다.
+2. 압축을 풀고 안에 있는 `시작하기` 폴더를  
+`C:\Users\user\AppData\Local\PixelComposer\Welcome files` 에 넣습니다.  
 (AppData로 가는 방법은 위 적용법 참조)
 
 처음 프로그램을 실행시 나오는 스플래시 화면( 좌측 상단 `파일 / 스플레시화면` 에서도 열 수 있음 )  
