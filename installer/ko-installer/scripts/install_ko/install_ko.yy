@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"install_ko",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"install_ko",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

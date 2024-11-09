@@ -1,0 +1,1 @@
+text_size = 15

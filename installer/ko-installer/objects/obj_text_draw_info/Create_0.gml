@@ -1,0 +1,1 @@
+text_lenght_size = 20
