@@ -44,6 +44,9 @@
 **한글 패치 설치 도우미**(ko-installer)를 통해 손쉽게 설치하실 수 있습니다.  
 한글 패치 설치 도우미는 [Realese](https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/releases)에서 다운받으실 수 있습니다.  
 ( ko-installer.zip 다운로드 후 압축 해제 > ko-installer.exe 실행 )
+
+</br>
+
 ![](/img/installer.png)
 
 </br>
@@ -60,6 +63,10 @@
 ## 수동 설치
 에러 코드 3이 난 경우 다음 문서를 따라주세요.  
 - [수동 설치 가이드](/doc/how_to_install.md)
+
+</br>
+</br>
+</br>
 
 --- 
 
