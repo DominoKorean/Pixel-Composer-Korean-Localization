@@ -2,11 +2,11 @@
 
     "anim_length": "애니메이션 길이",
     "anim_frame_rate": "미리보기 프레임 속도",
-    "anim_on_end": "끝날 때",
+    "anim_on_end": "끝",
 
-    "anim_scale_title": "애니메이션 크기조절",
+    "anim_scale_title": "애니메이션 길이 조절",
     "anim_scale_target_frame_length": "목표 프레임 길이",
-    "anim_scale_scale_factor": "크기 팩터: ",
+    "anim_scale_scale_factor": "스케일 팩터: ",
 
     "anim_interpolation": "보간 곡선",
 
@@ -95,7 +95,7 @@
     "pref_reset_colors": "색상 재설정",
 
     "pref_show_welcome_screen": "환영 화면 표시",
-    "pref_gui_scaling": "GUI 크기조절",
+    "pref_gui_scaling": "GUI 스케일링",
     "pref_double_click_delay": "더블 클릭 지연",
     "pref_keyboard_hold_start": "키보드 홀드 시작",
     "pref_keyboard_repeat_delay": "키보드 반복 지연",
@@ -139,7 +139,7 @@
     "panel_menu_show_grid": "그리드 표시",
     "panel_menu_grid_setting": "그리드 설정",
     "panel_menu_animation_setting": "애니메이션 설정",
-    "panel_menu_animation_scaler": "애니메이션 크기조절",
+    "panel_menu_animation_scaler": "애니메이션 길이 조절",
     "panel_menu_render_all_nodes": "모든 노드 렌더링",
     "panel_menu_execute_exports": "모든 내보내기 노드 실행",
     "panel_menu_test_load_all": "모든 현재 컬렉션 로드",
@@ -223,7 +223,7 @@
     "panel_animation_stagger": "Stagger",
     "panel_animation_goto": "노드로 이동",
     "panel_animation_show_graph": "그래프 표시",
-    "panel_animation_looping_mode": "루프 모드",
+    "panel_animation_looping_mode": "반복 모드",
     "panel_animation_length": "애니메이션 길이",
     "panel_animation_stretch": "애니메이션 스트레치",
     "panel_animation_adjust_length": "애니메이션 길이 조정",
@@ -232,7 +232,7 @@
     "panel_animation_previous_frame": "이전 프레임",
     "panel_animation_next_frame": "다음 프레임",
     "panel_animation_animation_settings": "애니메이션 설정",
-    "panel_animation_scale_animation": "애니메이션 크기",
+    "panel_animation_scale_animation": "애니메이션 길이",
     "panel_animation_hide_node": "컨텍스트 외부 노드 숨기기",
     "panel_animation_show_node": "컨텍스트 외부 노드 표시",
     "panel_animation_name_full": "전체 이름 표시",

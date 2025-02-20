@@ -21,11 +21,11 @@
 * 인터페이스 번역
     * [X] UI.json
     * [X] words.json
-    * [ ] nodes.json
+    * [ ] nodes.json ( 진행중 )
 
 * 문서 번역
   * [X] Getting started
-  * [ ] [공식 문서](https://pixel-composer-doc.readthedocs.io)
+  * [ ] [공식 문서](#pixel-composer-관련-문서)
 
 * 영상 번역 ( 진행 안됨 )
 
@@ -41,7 +41,7 @@
 </br>
 
 # 설치
-**한글 패치 설치 도우미**(ko-installer)를 통해 손쉽게 설치하실 수 있습니다.  
+**한글 패치 설치 도우미**( ko-installer.exe )를 통해 손쉽게 설치하실 수 있습니다.  
 한글 패치 설치 도우미는 [Realese](https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/releases)에서 다운받으실 수 있습니다.  
 ( ko-installer.zip 다운로드 후 압축 해제 > ko-installer.exe 실행 )
 
@@ -61,7 +61,7 @@
 </br>
 
 ## 수동 설치
-에러 코드 3이 난 경우 다음 문서를 따라주세요.  
+설치 도우미에서 에러 코드 3이 난 경우 다음 문서를 따라주세요.  
 - [수동 설치 가이드](/doc/how_to_install.md)
 
 </br>
@@ -101,16 +101,14 @@ PixelComposer을 재설치해주시면 됩니다.
 
 ## Pixel Composer 관련 문서
 
-* [공식 문서 1](https://docs.pixel-composer.com)
-* [공식 문서 2](https://pixel-composer-doc.readthedocs.io/en/latest/)
-* [팬덤 위키](https://pixel-composer.fandom.com/wiki/Pixel_Composer_Wiki)
+* [docs.pixel-composer.com](https://docs.pixel-composer.com)
+* [pixel-composer-doc.readthedocs.io](https://pixel-composer-doc.readthedocs.io/en/latest/)
+* [pixel-composer.fandom.com](https://pixel-composer.fandom.com/wiki/Pixel_Composer_Wiki)
 
 
 </br>
 </br>
 
-# ~~노드 검색에서 한국어가 안써질 경우~~
-~~한글자씩 쓰고 방향키로 오른쪽으로 넘길 수 밖에 없습니다.~~  
-~~외부에서 써서 복붙해도 됩니다.~~
-
-1.18 패치이후 외부에서 복붙하는것 외엔 안됩니다.
+# 노드 검색에서 한국어가 안써질 경우
+한글자씩 쓰고 방향키로 오른쪽으로 넘길 수 밖에 없습니다.  
+외부에서 써서 복붙해도 됩니다.

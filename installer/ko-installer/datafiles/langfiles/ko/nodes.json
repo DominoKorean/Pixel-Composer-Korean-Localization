@@ -1,243 +1,243 @@
 {
-  "Node_Cache_Array":{
-    "tooltip":"Store current animation as array.  Cache persisted between save.",
-    "inputs":[
+  "Node_Cache_Array": {
+    "tooltip": "현재 애니메이션을 배열로 저장합니다. 캐시는 저장 시 유지됩니다.",
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Surface in"
+        "tooltip": "",
+        "name": "입력"
       },
       {
-        "tooltip":"Frame index to start caching, set to -1 to start at the first frame.",
-        "name":"Start frame"
+        "tooltip": "캐싱을 시작할 프레임 인덱스입니다. -1로 설정하면 첫 프레임부터 시작합니다.",
+        "name": "시작 프레임"
       },
       {
-        "tooltip":"Frame index to stop caching (inclusive), set to -1 to stop at the last frame.",
-        "name":"Stop frame"
+        "tooltip": "캐싱을 멈출 프레임 인덱스 (포함). -1로 설정하면 마지막 프레임에서 멈춥니다.",
+        "name": "종료 프레임"
       },
       {
-        "tooltip":"Cache every N frames, set to 1 to cache every frame.",
-        "name":"Step"
+        "tooltip": "N 프레임마다 캐시를 생성합니다. 1로 설정하면 모든 프레임을 캐시합니다.",
+        "name": "단계"
       }
     ],
-    "name":"Cache Array",
-    "outputs":[
+    "name": "캐시 배열 Cache Array",
+    "outputs": [
       {
-        "tooltip":"",
-        "name":"Cache array"
+        "tooltip": "",
+        "name": "캐시 배열"
       }
     ]
   },
-  "Node_Mesh_Warp":{
-    "tooltip":"Wrap image by converting it to mesh, and using control points.",
-    "inputs":[
+  "Node_Mesh_Warp": {
+    "tooltip": "이미지를 메쉬로 변환하고 제어점을 사용하여 왜곡합니다.",
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Surface in"
+        "tooltip": "",
+        "name": "입력"
       },
       {
-        "tooltip":"Amount of grid subdivision. Higher number means more grid, detail.",
-        "name":"Sample"
+        "tooltip": "그리드 세분화 양입니다. 숫자가 클수록 더 많은 그리드와 세부사항이 추가됩니다.",
+        "name": "샘플"
       },
       {
-        "tooltip":"",
-        "name":"Spring Force"
+        "tooltip": "",
+        "name": "스프링 힘"
       },
       {
-        "tooltip":"",
-        "name":"Mesh"
+        "tooltip": "",
+        "name": "메쉬"
       },
       {
-        "tooltip":"Include diagonal link to prevent drastic grid deformation.",
-        "name":"Diagonal Link"
+        "tooltip": "격자가 심하게 변형되는 것을 방지하기 위해 대각선을 포함합니다.",
+        "name": "대각선 연결"
       },
       {
-        "tooltip":"",
-        "name":"Active"
+        "tooltip": "",
+        "name": "활성화"
       },
       {
-        "tooltip":"Link length preservation, setting it to 1 will prevent any stretching, contraction.",
-        "name":"Link Strength"
+        "tooltip": "연결 길이 유지, 1로 설정하면 어떤 늘어남이나 수축도 방지됩니다.",
+        "name": "연결 강도"
       },
       {
-        "tooltip":"",
-        "name":"Full Mesh"
+        "tooltip": "",
+        "name": "전체 메쉬"
       },
       {
-        "tooltip":"",
-        "name":"Mesh Type",
-        "display_data":[
+        "tooltip": "",
+        "name": "메쉬 유형",
+        "display_data": [
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_mesh_type)",
-            "data":"Grid",
-            "spr_ind":0.0,
-            "spr_blend":9404030.0,
-            "name":"Grid"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_mesh_type)",
+            "data": "Grid",
+            "spr_ind": 0.0,
+            "spr_blend": 9404030.0,
+            "name": "그리드"
           },
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_mesh_type)",
-            "data":"Custom",
-            "spr_ind":1.0,
-            "spr_blend":9404030.0,
-            "name":"Custom"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_mesh_type)",
+            "data": "Custom",
+            "spr_ind": 1.0,
+            "spr_blend": 9404030.0,
+            "name": "사용자 정의"
           }
         ]
       },
       {
-        "tooltip":"",
-        "name":"Seed"
+        "tooltip": "",
+        "name": "시드"
       }
     ],
-    "name":"Mesh Warp",
-    "outputs":[
+    "name": "메쉬 왜곡 Mesh Warp",
+    "outputs": [
       {
-        "tooltip":"",
-        "name":"Surface out"
+        "tooltip": "",
+        "name": "표면 출력"
       },
       {
-        "tooltip":"",
-        "name":"Mesh data"
+        "tooltip": "",
+        "name": "메쉬 데이터"
       }
     ]
   },
-  "Node_2D_light":{
-    "tooltip":"Apply different shaped light on the image.",
-    "inputs":[
+  "Node_2D_light": {
+    "tooltip": "이미지에 다양한 모양의 빛을 적용합니다.",
+    "inputs": [
       {
-        "tooltip":"",
-        "name":"Surface in"
+        "tooltip": "",
+        "name": "입력"
       },
       {
-        "tooltip":"",
-        "name":"Light shape",
-        "display_data":[
+        "tooltip": "",
+        "name": "빛 모양",
+        "display_data": [
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_2d_light_shape)",
-            "data":"Point",
-            "spr_ind":0.0,
-            "spr_blend":9404030.0,
-            "name":"Point"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_2d_light_shape)",
+            "data": "Point",
+            "spr_ind": 0.0,
+            "spr_blend": 9404030.0,
+            "name": "점"
           },
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_2d_light_shape)",
-            "data":"Line",
-            "spr_ind":1.0,
-            "spr_blend":9404030.0,
-            "name":"Line"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_2d_light_shape)",
+            "data": "Line",
+            "spr_ind": 1.0,
+            "spr_blend": 9404030.0,
+            "name": "선"
           },
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_2d_light_shape)",
-            "data":"Line asymmetric",
-            "spr_ind":2.0,
-            "spr_blend":9404030.0,
-            "name":"Line asymmetric"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_2d_light_shape)",
+            "data": "Line asymmetric",
+            "spr_ind": 2.0,
+            "spr_blend": 9404030.0,
+            "name": "비대칭 선"
           },
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_2d_light_shape)",
-            "data":"Spot",
-            "spr_ind":3.0,
-            "spr_blend":9404030.0,
-            "name":"Spot"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_2d_light_shape)",
+            "data": "Spot",
+            "spr_ind": 3.0,
+            "spr_blend": 9404030.0,
+            "name": "스팟"
           }
         ]
       },
       {
-        "tooltip":"",
-        "name":"Center"
+        "tooltip": "",
+        "name": "중심"
       },
       {
-        "tooltip":"",
-        "name":"Range"
+        "tooltip": "",
+        "name": "범위"
       },
       {
-        "tooltip":"",
-        "name":"Intensity"
+        "tooltip": "",
+        "name": "강도"
       },
       {
-        "tooltip":"",
-        "name":"Color"
+        "tooltip": "",
+        "name": "색상"
       },
       {
-        "tooltip":"",
-        "name":"Start"
+        "tooltip": "",
+        "name": "시작"
       },
       {
-        "tooltip":"",
-        "name":"Finish"
+        "tooltip": "",
+        "name": "끝"
       },
       {
-        "tooltip":"",
-        "name":"Sweep"
+        "tooltip": "",
+        "name": "스윕"
       },
       {
-        "tooltip":"",
-        "name":"Sweep end"
+        "tooltip": "",
+        "name": "스윕 끝"
       },
       {
-        "tooltip":"",
-        "name":"Banding"
+        "tooltip": "",
+        "name": "밴딩"
       },
       {
-        "tooltip":"Control how light fade out over distance.",
-        "name":"Attenuation",
-        "display_data":[
+        "tooltip": "빛이 거리에서 어떻게 감쇠하는지 조절합니다.",
+        "name": "감쇠",
+        "display_data": [
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_curve)",
-            "data":"Quadratic",
-            "spr_ind":0.0,
-            "spr_blend":9404030.0,
-            "name":"Quadratic"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_curve)",
+            "data": "Quadratic",
+            "spr_ind": 0.0,
+            "spr_blend": 9404030.0,
+            "name": "2차 함수"
           },
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_curve)",
-            "data":"Invert quadratic",
-            "spr_ind":1.0,
-            "spr_blend":9404030.0,
-            "name":"Invert quadratic"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_curve)",
+            "data": "Invert quadratic",
+            "spr_ind": 1.0,
+            "spr_blend": 9404030.0,
+            "name": "역 2차 함수"
           },
           {
-            "tooltip":"",
-            "spr":"@ref sprite(s_node_curve)",
-            "data":"Linear",
-            "spr_ind":2.0,
-            "spr_blend":9404030.0,
-            "name":"Linear"
+            "tooltip": "",
+            "spr": "@ref sprite(s_node_curve)",
+            "data": "Linear",
+            "spr_ind": 2.0,
+            "spr_blend": 9404030.0,
+            "name": "선형"
           }
         ]
       },
       {
-        "tooltip":"",
-        "name":"Radial banding"
+        "tooltip": "",
+        "name": "방사형 밴딩"
       },
       {
-        "tooltip":"",
-        "name":"Radial start"
+        "tooltip": "",
+        "name": "방사형 시작"
       },
       {
-        "tooltip":"",
-        "name":"Radial band ratio"
+        "tooltip": "",
+        "name": "방사형 밴드 비율"
       },
       {
-        "tooltip":"",
-        "name":"Active"
+        "tooltip": "",
+        "name": "활성"
       }
     ],
-    "name":"2D Light",
-    "outputs":[
+    "name": "2D 라이트 2D Light",
+    "outputs": [
       {
-        "tooltip":"",
-        "name":"Surface out"
+        "tooltip": "",
+        "name": "표면 출력"
       },
       {
-        "tooltip":"",
-        "name":"Light only"
+        "tooltip": "",
+        "name": "빛만 출력"
       }
     ]
   },
@@ -485,7 +485,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -525,7 +525,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -581,7 +581,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -658,52 +658,52 @@
     ]
   },
   "Node_Export":{
-    "tooltip":"Export image, image array to file, image sequence, animation.",
+    "tooltip":"이미지, 이미지 배열을 파일, 이미지 시퀀스, 애니메이션으로 내보냅니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Surface"
+        "name":"표면"
       },
       {
         "tooltip":"",
-        "name":"Paths"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Template"
+        "name":"템플릿"
       },
       {
         "tooltip":"",
-        "name":"Type",
+        "name":"유형",
         "display_data":[
-          "Single image",
-          "Image sequence",
-          "Animation"
+          "단일 이미지",
+          "이미지 시퀀스",
+          "애니메이션"
         ]
       },
       {
         "tooltip":"",
-        "name":"Template guides"
+        "name":"템플릿 가이드"
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"",
-        "name":"Frame optimization"
+        "name":"프레임 최적화"
       },
       {
         "tooltip":"",
-        "name":"Color merge"
+        "name":"색상 병합"
       },
       {
         "tooltip":"",
-        "name":"Framerate"
+        "name":"프레임 속도"
       },
       {
         "tooltip":"",
-        "name":"Format",
+        "name":"형식",
         "display_data":[
           ".png",
           ".jpg",
@@ -712,43 +712,43 @@
       },
       {
         "tooltip":"",
-        "name":"Quality"
+        "name":"품질"
       },
       {
         "tooltip":"",
-        "name":"Sequence begin"
+        "name":"시퀀스 시작"
       },
       {
         "tooltip":"",
-        "name":"Frame range"
+        "name":"프레임 범위"
       },
       {
         "tooltip":"",
-        "name":"Subformat",
+        "name":"하위 형식",
         "display_data":[
           "INDEX4",
           "INDEX8",
-          "Default (PNG32)"
+          "기본값 (PNG32)"
         ]
       },
       {
         "tooltip":"",
-        "name":"Frame step"
+        "name":"프레임 단계"
       },
       {
         "tooltip":"",
-        "name":"Custom Range"
+        "name":"사용자 정의 범위"
       },
       {
         "tooltip":"",
-        "name":"Export on Save"
+        "name":"저장 시 내보내기"
       }
     ],
-    "name":"Export",
+    "name":"내보내기 Export",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Preview"
+        "name":"미리보기"
       }
     ]
   },
@@ -989,7 +989,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -1026,7 +1026,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -1034,7 +1034,7 @@
     "tooltip":"",
     "inputs":[
     ],
-    "name":"Feedback",
+    "name":"피드백 Feedback",
     "outputs":[
     ]
   },
@@ -1178,7 +1178,7 @@
           "Node",
           -1.0,
           "Any",
-          "Path",
+          "경로",
           "Particle",
           "Rigidbody Object",
           "Domain",
@@ -1306,14 +1306,14 @@
     ]
   },
   "Node_Canvas_Group":{
-    "tooltip":"Create a group that combines multiple canvas nodes a layers.",
+    "tooltip":"여러개의 캔버스 노드 또는 레이어를 결합하는 그룹을 생성합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Dimension"
+        "name":"크기"
       }
     ],
-    "name":"Canvas Group",
+    "name":"캔버스 그룹 Canvas Group",
     "outputs":[
     ]
   },
@@ -1524,7 +1524,7 @@
       },
       {
         "tooltip":"Make each copy follow along path.",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"Range of the path to follow.",
@@ -1638,7 +1638,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -2350,7 +2350,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -2680,7 +2680,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -2720,7 +2720,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -2840,7 +2840,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -3046,7 +3046,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface Out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -3432,7 +3432,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface Out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -3564,7 +3564,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -3589,7 +3589,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -3629,7 +3629,7 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"",
@@ -3668,7 +3668,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -3777,7 +3777,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -3853,7 +3853,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -4021,7 +4021,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -4373,7 +4373,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       }
     ],
     "name":"VFX",
@@ -4766,7 +4766,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface Out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -4779,7 +4779,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       }
     ],
     "name":"VFX",
@@ -4858,7 +4858,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface Out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -4959,100 +4959,100 @@
     ]
   },
   "Node_Canvas":{
-    "tooltip":"Draw on surface using brush, eraser, etc.",
+    "tooltip":"브러시, 지우개 등을 사용하여 표면에 그림을 그릴 수 있습니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Dimension"
+        "name":"크기"
       },
       {
         "tooltip":"",
-        "name":"Color"
+        "name":"색"
       },
       {
         "tooltip":"",
-        "name":"Brush size"
+        "name":"브러시 크기"
       },
       {
         "tooltip":"",
-        "name":"Fill threshold"
+        "name":"채우기 임계값"
       },
       {
         "tooltip":"",
-        "name":"Fill type",
+        "name":"채우기 유형",
         "display_data":[
-          "4 connect",
-          "8 connect",
-          "Entire canvas"
+          "4방향 연결",
+          "8방향 연결",
+          "전체 캔버스"
         ]
       },
       {
         "tooltip":"",
-        "name":"Draw preview overlay"
+        "name":"미리보기 오버레이 그리기"
       },
       {
         "tooltip":"",
-        "name":"Brush"
+        "name":"브러시"
       },
       {
         "tooltip":"",
-        "name":"Surface amount"
+        "name":"표면 양"
       },
       {
         "tooltip":"",
-        "name":"Background"
+        "name":"배경"
       },
       {
         "tooltip":"",
-        "name":"Background alpha"
+        "name":"배경 투명도"
       },
       {
         "tooltip":"",
-        "name":"Render background"
+        "name":"배경 렌더"
       },
       {
         "tooltip":"",
-        "name":"Alpha"
+        "name":"투명도"
       },
       {
         "tooltip":"",
-        "name":"Frames animation"
+        "name":"프레임 에니메이션"
       },
       {
         "tooltip":"",
-        "name":"Animation speed"
+        "name":"에니메이션 속도"
       },
       {
         "tooltip":"",
-        "name":"Use background dimension"
+        "name":" 배경 차원 사용"
       },
       {
         "tooltip":"",
-        "name":"Brush distance"
+        "name":"브러시 거리"
       },
       {
         "tooltip":"",
-        "name":"Rotate brush by direction"
+        "name":"방향에 따라 브러시 회전"
       },
       {
         "tooltip":"",
-        "name":"Random direction"
+        "name":"무작위 방향"
       },
       {
         "tooltip":"",
-        "name":"Animation Type",
+        "name":"애니메이션 유형",
         "display_data":[
-          "Loop",
-          "Hold",
-          "Clear"
+          "반복",
+          "유지",
+          "제거"
         ]
       }
     ],
-    "name":"Canvas",
+    "name":"캔버스 Canvas",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5128,7 +5128,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface Out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5238,7 +5238,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5314,7 +5314,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5350,7 +5350,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5391,7 +5391,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5431,7 +5431,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5531,7 +5531,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5654,7 +5654,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -5757,7 +5757,7 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"Whether to select image from an array in order, at random, or treat array as animation.",
@@ -5789,7 +5789,7 @@
         "tooltip":"",
         "name":"On animation end",
         "display_data":[
-          "Loop",
+          "반복",
           "Ping pong",
           "Destroy"
         ]
@@ -5872,7 +5872,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -5990,30 +5990,30 @@
     ]
   },
   "Node_Frame":{
-    "tooltip":"Create frame surrounding nodes.",
+    "tooltip":"노드를 둘러싸는 프레임을 생성합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Size"
+        "name":"크기"
       },
       {
         "tooltip":"",
-        "name":"Color"
+        "name":"색상"
       },
       {
         "tooltip":"",
-        "name":"Alpha"
+        "name":"투명도"
       },
       {
         "tooltip":"",
-        "name":"Label size"
+        "name":"레이블 크기"
       },
       {
         "tooltip":"",
-        "name":"Blend label"
+        "name":"레이블 혼합"
       }
     ],
-    "name":"Frame",
+    "name":"프레임 Frame",
     "outputs":[
     ]
   },
@@ -6066,7 +6066,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6098,7 +6098,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6122,7 +6122,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -6442,7 +6442,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6490,7 +6490,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6546,7 +6546,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6634,7 +6634,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6698,7 +6698,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6722,7 +6722,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6770,7 +6770,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6814,7 +6814,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -6889,42 +6889,42 @@
     ]
   },
   "Node_WAV_File_Read":{
-    "tooltip":"Load wav audio file.",
+    "tooltip":"wav 오디오 파일을 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Sync length"
+        "name":"길이 동기화"
       },
       {
         "tooltip":"",
-        "name":"Mono"
+        "name":"모노"
       }
     ],
-    "name":"WAV File In",
+    "name":"WAV 파일 불러오기 WAV File In",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Data"
+        "name":"데이터"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Sample rate"
+        "name":"샘플 속도"
       },
       {
         "tooltip":"",
-        "name":"Channels"
+        "name":"채널"
       },
       {
         "tooltip":"",
-        "name":"Duration (s)"
+        "name":"재생 시간 (초)"
       }
     ]
   },
@@ -6963,7 +6963,7 @@
           "Border",
           "Map",
           "Direct Data",
-          "Path",
+          "경로",
           "Full image + Tile"
         ]
       },
@@ -7033,7 +7033,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -7067,7 +7067,7 @@
         "tooltip":"",
         "name":"Animated array end",
         "display_data":[
-          "Loop",
+          "반복",
           "Ping Pong"
         ]
       },
@@ -7125,7 +7125,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -7201,7 +7201,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -7254,38 +7254,38 @@
     ]
   },
   "Node_WAV_File_Write":{
-    "tooltip":"Save wav audio file.",
+    "tooltip":"wav 오디오 파일을 저장합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Audio Data"
+        "name":"오디오 데이터"
       },
       {
         "tooltip":"",
-        "name":"Sample"
+        "name":"샘플"
       },
       {
         "tooltip":"",
-        "name":"Bit Depth",
+        "name":"비트 깊이",
         "display_data":[
-          "8 bit positive",
-          "16 bit integer"
+          "8비트 양수",
+          "16비트 정수"
         ]
       },
       {
         "tooltip":"",
-        "name":"Remap Data"
+        "name":"데이터 리맵"
       },
       {
         "tooltip":"",
-        "name":"Data Range"
+        "name":"데이터 범위"
       }
     ],
-    "name":"WAV File Out",
+    "name":"WAV 파일 내보내기 WAV File Out",
     "outputs":[
     ]
   },
@@ -7353,7 +7353,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -7493,7 +7493,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -7651,7 +7651,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -7869,7 +7869,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -7909,7 +7909,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -8005,7 +8005,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8081,7 +8081,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8133,41 +8133,41 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Sequence_Anim":{
-    "tooltip":"Convert array of images into animation.",
+    "tooltip":"이미지 배열을 애니메이션으로 변환합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Surface in"
+        "name":"표면 입력"
       },
       {
         "tooltip":"",
-        "name":"Speed"
+        "name":"속도"
       },
       {
         "tooltip":"",
-        "name":"Sequence"
+        "name":"시퀀스"
       },
       {
         "tooltip":"",
-        "name":"Overflow",
+        "name":"오버플로우",
         "display_data":[
-          "Hold",
-          "Loop",
-          "Ping Pong",
-          "Empty"
+          "유지",
+          "반복",
+          "좌우반복",
+          "비우기"
         ]
       }
     ],
-    "name":"Array to Anim",
+    "name":"배열을 애니메이션으로 Array to Anim",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8211,7 +8211,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8338,7 +8338,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -8542,7 +8542,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8605,10 +8605,10 @@
       },
       {
         "tooltip":"",
-        "name":"Loop",
+        "name":"반복",
         "display_data":[
           "None",
-          "Loop",
+          "반복",
           "Pingpong"
         ]
       },
@@ -8653,7 +8653,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8677,7 +8677,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8738,7 +8738,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -8866,7 +8866,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -8998,7 +8998,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9066,7 +9066,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9107,7 +9107,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9139,7 +9139,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9180,7 +9180,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9236,7 +9236,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9304,7 +9304,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9366,7 +9366,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9422,7 +9422,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9482,27 +9482,27 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_XML_File_Read":{
-    "tooltip":"Load xml file.",
+    "tooltip":"XML 파일을 불러옵니다",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ],
-    "name":"XML File In",
+    "name":"XML 파일 불러오기 XML File In",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -9530,23 +9530,23 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_XML_File_Write":{
-    "tooltip":"Write struct to xml file.",
+    "tooltip":"구조체를 XML 파일로 저장합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Struct"
+        "name":"구조체"
       }
     ],
-    "name":"XML File Out",
+    "name":"XML 파일 내보내기 XML File Out",
     "outputs":[
     ]
   },
@@ -9652,7 +9652,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9705,7 +9705,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9770,7 +9770,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9794,7 +9794,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -9940,7 +9940,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -9948,7 +9948,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -10037,7 +10037,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -10143,7 +10143,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -10282,7 +10282,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -10417,7 +10417,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -10755,7 +10755,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -10872,55 +10872,55 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Active_Canvas":{
-    "tooltip":"Draw using parameterized brush.",
+    "tooltip":"매개변수화된 브러시를 사용하여 그릴 수 있습니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Dimension"
+        "name":"크기"
       },
       {
         "tooltip":"",
-        "name":"Texture"
+        "name":"텍스쳐"
       },
       {
         "tooltip":"",
-        "name":"Position"
+        "name":"위치"
       },
       {
         "tooltip":"",
-        "name":"Rotation"
+        "name":"회전"
       },
       {
         "tooltip":"",
-        "name":"Scale"
+        "name":"크기"
       },
       {
         "tooltip":"",
-        "name":"Color"
+        "name":"색"
       },
       {
         "tooltip":"",
-        "name":"Alpha"
+        "name":"투명도"
       },
       {
         "tooltip":"",
-        "name":"Active"
+        "name":"활성"
       },
       {
         "tooltip":"",
-        "name":"Distance"
+        "name":"거리"
       }
     ],
-    "name":"Active Canvas",
+    "name":"활성 캔버스 Active Canvas",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Output"
+        "name":"출력"
       }
     ]
   },
@@ -10976,7 +10976,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11026,7 +11026,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -11061,7 +11061,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11174,7 +11174,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11250,7 +11250,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11282,7 +11282,7 @@
           "Node",
           -1.0,
           "Any",
-          "Path",
+          "경로",
           "Particle",
           "Rigidbody Object",
           "Domain",
@@ -11494,7 +11494,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -11538,7 +11538,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11682,7 +11682,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11763,7 +11763,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11783,7 +11783,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11791,7 +11791,7 @@
     "tooltip":"",
     "inputs":[
     ],
-    "name":"Group",
+    "name":"그룹 Group",
     "outputs":[
     ]
   },
@@ -11855,7 +11855,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -11987,7 +11987,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -12215,7 +12215,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -12342,7 +12342,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -12370,7 +12370,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -12422,7 +12422,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -12574,7 +12574,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -12978,7 +12978,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -13121,7 +13121,7 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"Whether to select image from an array in order, at random, or treat array as animation.",
@@ -13153,7 +13153,7 @@
         "tooltip":"",
         "name":"On animation end",
         "display_data":[
-          "Loop",
+          "반복",
           "Ping pong",
           "Destroy"
         ]
@@ -13236,7 +13236,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -13288,7 +13288,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -13384,7 +13384,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -13457,7 +13457,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -13545,7 +13545,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -13606,7 +13606,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -13715,7 +13715,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -13881,7 +13881,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -13938,7 +13938,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -13979,61 +13979,61 @@
     ]
   },
   "Node_Image_Animated":{
-    "tooltip":"Load multiple images from your computer as animation.",
+    "tooltip":"컴퓨터에서 여러 이미지를 애니메이션으로 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Padding"
+        "name":"여백"
       },
       {
-        "tooltip":"Stretch animation speed to match project length.",
-        "name":"Stretch frame"
-      },
-      {
-        "tooltip":"",
-        "name":"Animation speed"
+        "tooltip":"프로젝트 길이에 맞게 애니메이션 속도를 조정합니다.",
+        "name":"프레임 늘리기"
       },
       {
         "tooltip":"",
-        "name":"Loop modes",
+        "name":"애니메이션 속도"
+      },
+      {
+        "tooltip":"",
+        "name":"반복 모드",
         "display_data":[
-          "Loop",
-          "Ping pong",
-          "Hold last frame",
-          "Hide"
+          "반복",
+          "핑퐁",
+          "마지막 프레임 유지",
+          "숨기기"
         ]
       },
       {
         "tooltip":"",
-        "name":"Set animation length to match"
+        "name":"애니메이션 길이를 맞추기"
       },
       {
         "tooltip":"",
-        "name":"Custom frame order"
+        "name":"사용자 지정 프레임 순서"
       },
       {
         "tooltip":"",
-        "name":"Frame"
+        "name":"프레임"
       },
       {
         "tooltip":"",
-        "name":"Canvas size",
+        "name":"캔버스 크기",
         "display_data":[
-          "First",
-          "Minimum",
-          "Maximum"
+          "첫 번째",
+          "최소",
+          "최대"
         ]
       }
     ],
-    "name":"Animation",
+    "name":"애니메이션 Animation",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -14100,7 +14100,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -14228,61 +14228,61 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Image_gif":{
-    "tooltip":"Load animated .gif from your computer.",
+    "tooltip":"컴퓨터에서 애니메이션 GIF를 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Set animation length to gif"
+        "name":"애니메이션 길이를 gif에 맞추기"
       },
       {
         "tooltip":"",
-        "name":"Output as array"
+        "name":"배열로 출력"
       },
       {
         "tooltip":"",
-        "name":"Loop modes",
+        "name":"반복 모드",
         "display_data":[
-          "Loop",
-          "Ping pong",
-          "Hold last frame",
-          "Hide"
+          "반복",
+          "반사 반복",
+          "마지막 프레임 유지",
+          "숨기기"
         ]
       },
       {
         "tooltip":"",
-        "name":"Start frame"
+        "name":"시작 프레임"
       },
       {
         "tooltip":"",
-        "name":"Custom frame order"
+        "name":"사용자 지정 프레임 순서"
       },
       {
         "tooltip":"",
-        "name":"Frame"
+        "name":"프레임"
       },
       {
         "tooltip":"",
-        "name":"Animation speed"
+        "name":"에니메이션 속도"
       }
     ],
-    "name":"Image GIF",
+    "name":"이미지 GIF Image GIF",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -14295,7 +14295,7 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"",
@@ -14368,7 +14368,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -14405,43 +14405,43 @@
     ]
   },
   "Node_Image_Sequence":{
-    "tooltip":"Load multiple images from your computer as array.",
+    "tooltip":"컴퓨터에서 여러 이미지를 배열로 불러올 수 있습니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Paths"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Padding"
+        "name":"여백"
       },
       {
         "tooltip":"",
-        "name":"Canvas size",
+        "name":"캔버스 크기",
         "display_data":[
-          "Individual",
-          "Minimum",
-          "Maximum"
+          "개별",
+          "최소",
+          "최대"
         ]
       },
       {
         "tooltip":"",
-        "name":"Sizing method",
+        "name":"크기 조정 방법",
         "display_data":[
-          "Padding \/ Crop",
-          "Scale"
+          "여백 \/ 자르기",
+          "크기"
         ]
       }
     ],
-    "name":"Image Array",
+    "name":"이미지 배열 Image Array",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
-        "name":"Paths"
+        "name":"경로"
       }
     ]
   },
@@ -14511,7 +14511,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -14520,7 +14520,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -14575,7 +14575,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -14599,47 +14599,47 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
   "Node_CSV_File_Read":{
-    "tooltip":"Load .csv as text, number array.",
+    "tooltip":".csv 파일을 텍스트, 숫자 배열로 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Convert to number"
+        "name":"숫자로 변환"
       }
     ],
-    "name":"CSV File In",
+    "name":"CSV 파일 불러오기 CSV File In",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
   "Node_CSV_File_Write":{
-    "tooltip":"Save array as .csv file.",
+    "tooltip":"배열을 .csv 파일로 저장합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       }
     ],
-    "name":"CSV File Out",
+    "name":"CSV 파일 내보내기 CSV File Out",
     "outputs":[
     ]
   },
@@ -14691,7 +14691,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -14700,7 +14700,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -14715,7 +14715,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -14727,7 +14727,7 @@
         "name":"Type",
         "display_data":[
           "Point",
-          "Path",
+          "경로",
           "Mesh"
         ]
       },
@@ -14749,7 +14749,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -14845,7 +14845,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -14913,7 +14913,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -14926,14 +14926,14 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       }
     ],
     "name":"Path Builder",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -14949,7 +14949,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -14969,7 +14969,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -15173,7 +15173,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -15202,51 +15202,51 @@
     ]
   },
   "Node_Image_Sheet":{
-    "tooltip":"Cut up spritesheet into animation or image array.",
+    "tooltip":"스프라이트 시트를 잘라 애니메이션 또는 이미지 배열로 분할합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Surface in"
+        "name":"표면 입력"
       },
       {
         "tooltip":"",
-        "name":"Sprite size"
+        "name":"스프라이트 크기"
       },
       {
         "tooltip":"",
-        "name":"Row"
+        "name":"행"
       },
       {
         "tooltip":"",
-        "name":"Amount"
+        "name":"수량"
       },
       {
         "tooltip":"",
-        "name":"Offset"
+        "name":"오프셋"
       },
       {
         "tooltip":"",
-        "name":"Spacing"
+        "name":"간격"
       },
       {
         "tooltip":"",
-        "name":"Padding"
+        "name":"여백"
       },
       {
         "tooltip":"",
-        "name":"Output",
+        "name":"출력",
         "display_data":[
-          "Animation",
-          "Array"
+          "애니메이션",
+          "배열"
         ]
       },
       {
         "tooltip":"",
-        "name":"Animation speed"
+        "name":"에니메이션 속도"
       },
       {
         "tooltip":"",
-        "name":"Main Axis",
+        "name":"주축",
         "display_data":[
           {
             "tooltip":"",
@@ -15254,7 +15254,7 @@
             "data":"Horizontal",
             "spr_ind":0.0,
             "spr_blend":9404030.0,
-            "name":"Horizontal"
+            "name":"수평"
           },
           {
             "tooltip":"",
@@ -15262,7 +15262,7 @@
             "data":"Vertical",
             "spr_ind":1.0,
             "spr_blend":9404030.0,
-            "name":"Vertical"
+            "name":"수직"
           }
         ]
       },
@@ -15291,11 +15291,11 @@
         "name":"Filtered Color"
       }
     ],
-    "name":"Splice Spritesheet",
+    "name":"스프라이트 시트 분할 Splice Spritesheet",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -15343,7 +15343,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -15352,7 +15352,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -15363,7 +15363,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -15411,31 +15411,31 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Image":{
-    "tooltip":"Load a single image from your computer.",
+    "tooltip":"컴퓨터에서 단일 이미지를 불러옵니다",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Padding"
+        "name":"여백"
       }
     ],
-    "name":"Image",
+    "name":"이미지 image",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -15555,7 +15555,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -15651,7 +15651,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -15684,7 +15684,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -15767,7 +15767,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -15945,7 +15945,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -16052,7 +16052,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -16129,7 +16129,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -16179,22 +16179,22 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ],
     "name":"Reverse Path",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
   "Node_Iterate_Each_Inline":{
-    "tooltip":"Create group that iterate to each member in an array.",
+    "tooltip":"배열의 각 요소를 반복 처리하는 그룹을 생성합니다.",
     "inputs":[
     ],
-    "name":"Loop Array",
+    "name":"배열 반복 Loop Array",
     "outputs":[
     ]
   },
@@ -16203,7 +16203,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -16213,7 +16213,7 @@
         "tooltip":"",
         "name":"Type",
         "display_data":[
-          "Loop",
+          "반복",
           "Ping pong"
         ]
       }
@@ -16247,10 +16247,10 @@
     ]
   },
   "Node_Iterate_Filter_Inline":{
-    "tooltip":"Filter array using condition.",
+    "tooltip":"조건을 사용하여 배열을 필터링합니다.",
     "inputs":[
     ],
-    "name":"Filter Array",
+    "name":"배열 필터",
     "outputs":[
     ]
   },
@@ -16370,7 +16370,7 @@
         "name":"Repeat"
       }
     ],
-    "name":"Loop",
+    "name":"반복",
     "outputs":[
     ]
   },
@@ -16430,7 +16430,7 @@
         "name":"Overflow",
         "display_data":[
           "Clamp",
-          "Loop",
+          "반복",
           "Ping Pong"
         ]
       }
@@ -16547,7 +16547,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface Out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -16652,19 +16652,19 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
   "Node_Iterate":{
-    "tooltip":"Create group that reuse output as input repeatedly in one frame.",
+    "tooltip":"한 프레임 내에서 출력을 입력으로 반복하여 재사용하는 그룹을 생성합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Repeat"
+        "name":"반복"
       }
     ],
-    "name":"Loop",
+    "name":"반복",
     "outputs":[
     ]
   },
@@ -16673,7 +16673,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -16729,7 +16729,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -16740,31 +16740,31 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
   "Node_SVG":{
-    "tooltip":"Load a SVG file.",
+    "tooltip":"SVG 파일을 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Scale"
+        "name":"크기"
       }
     ],
     "name":"SVG",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
-        "name":"SVG Struct"
+        "name":"SVG 구조체"
       }
     ]
   },
@@ -16849,7 +16849,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"",
@@ -16917,7 +16917,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -16940,7 +16940,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -16961,14 +16961,14 @@
     ]
   },
   "Node_Array_Pin":{
-    "tooltip":"Create a pin that can receive multiple values and return an array.",
+    "tooltip":"여러 값을 받을 수 있고 배열을 반환하는 핀을 생성합니다.",
     "inputs":[
     ],
-    "name":"Array Pin",
+    "name":"배열 핀 Array Pin",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Array"
+        "name":"배열"
       }
     ]
   },
@@ -16977,7 +16977,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -16988,7 +16988,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -17017,22 +17017,22 @@
     ]
   },
   "Node_Text_File_Read":{
-    "tooltip":"Load .txt in as text.",
+    "tooltip":".txt 파일을 텍스트로 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ],
-    "name":"Text File In",
+    "name":"텍스트 파일 불러오기 Text File In",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -17049,18 +17049,18 @@
     ]
   },
   "Node_Text_File_Write":{
-    "tooltip":"Save text as a .txt file.",
+    "tooltip":"텍스트를 .txt 파일로 저장합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       }
     ],
-    "name":"Text File Out",
+    "name":"텍스트 파일 내보내기 Text File Out",
     "outputs":[
     ]
   },
@@ -17092,7 +17092,7 @@
           "Node",
           -1.0,
           "Any",
-          "Path",
+          "경로",
           "Particle",
           "Rigidbody Object",
           "Domain",
@@ -17453,7 +17453,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -17462,7 +17462,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -17505,7 +17505,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -17594,38 +17594,38 @@
     ]
   },
   "Node_Json_File_Read":{
-    "tooltip":"Load .json file using keys.",
+    "tooltip":".json 파일을 키를 사용하여 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ],
-    "name":"JSON File In",
+    "name":"JSON 파일 불러오기 JSON File In",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Struct"
+        "name":"구조체"
       }
     ]
   },
   "Node_Json_File_Write":{
-    "tooltip":"Save data to .json file.",
+    "tooltip":"데이터를 .json 파일로 저장합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Struct"
+        "name":"구조체"
       }
     ],
-    "name":"JSON File Out",
+    "name":"JSON 파일 내보내기 JSON File Out",
     "outputs":[
     ]
   },
@@ -17725,7 +17725,7 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"",
@@ -17740,7 +17740,7 @@
         "name":"Round anchor"
       }
     ],
-    "name":"Path",
+    "name":"경로",
     "outputs":[
       {
         "tooltip":"",
@@ -17827,7 +17827,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -17895,7 +17895,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -17927,7 +17927,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -18079,7 +18079,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -18157,7 +18157,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -18178,14 +18178,14 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       }
     ],
     "name":"Time Remap",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -18414,7 +18414,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -18623,42 +18623,42 @@
     ]
   },
   "Node_ASE_File_Read":{
-    "tooltip":"Load Aseprite file with support for layers, tags.",
+    "tooltip":"레이어와 태그를 지원하는 Aseprite 파일을 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Generate layers"
+        "name":"레이어 생성"
       },
       {
         "tooltip":"",
-        "name":"Current tag"
+        "name":"현재 태그"
       },
       {
         "tooltip":"",
-        "name":"Use cel dimension"
+        "name":"셀 크기 사용"
       }
     ],
-    "name":"ASE File In",
+    "name":"ASE 파일 불러오기 ASE File In",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Output"
+        "name":"출력"
       },
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Palette"
+        "name":"팔레트"
       }
     ]
   },
@@ -18706,7 +18706,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -18723,7 +18723,7 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"Maximum distance to search for movement, set to -1 to search the entire image.",
@@ -18746,7 +18746,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -18861,22 +18861,22 @@
     ]
   },
   "Node_ASE_layer":{
-    "tooltip":"Load Aseprite project file",
+    "tooltip":"Aseprite 프로젝트 파일을 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"ASE data"
+        "name":"ASE 데이터"
       },
       {
         "tooltip":"",
-        "name":"Crop Output"
+        "name":"출력 자르기"
       }
     ],
-    "name":"ASE Layer",
+    "name":"ASE 레이어 ASE Layer",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -18956,7 +18956,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -19310,7 +19310,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -19338,7 +19338,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -19883,7 +19883,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -19940,7 +19940,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -20055,7 +20055,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -20119,7 +20119,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -20217,7 +20217,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -20396,23 +20396,23 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Pin":{
-    "tooltip":"Create a pin to organize your connection. Can be create by double clicking on a connection line.",
+    "tooltip":"연결을 정리하기 위한 핀을 생성합니다. 연결 선을 더블 클릭하여 생성할 수 있습니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"In"
+        "name":"입력"
       }
     ],
-    "name":"Pin",
+    "name":"핀 Pin",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Out"
+        "name":"출력"
       }
     ]
   },
@@ -20428,7 +20428,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface Out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -20484,7 +20484,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -20617,23 +20617,23 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Tunnel_In":{
-    "tooltip":"Create tunnel for sending value based on key matching.",
+    "tooltip":"키 매칭을 기반으로 값을 전송하는 터널을 생성합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Name"
+        "name":"이름"
       },
       {
         "tooltip":"",
-        "name":"Value in"
+        "name":"입력 값"
       }
     ],
-    "name":"Tunnel In",
+    "name":"터널 입력 Tunnel In",
     "outputs":[
     ]
   },
@@ -20694,23 +20694,23 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Tunnel_Out":{
-    "tooltip":"Receive value from tunnel in of the same key.",
+    "tooltip":"동일한 키의 터널 입력에서 값을 수신합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Name"
+        "name":"이름"
       }
     ],
-    "name":"Tunnel Out",
+    "name":"터널 출력 Tunnel Out",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Value out"
+        "name":"출력 값"
       }
     ]
   },
@@ -20779,7 +20779,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -20841,7 +20841,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -20909,7 +20909,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -21000,43 +21000,43 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Directory_Search":{
-    "tooltip":"Search for files in directory.",
+    "tooltip":"디렉터리에서 파일을 검색합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Extensions"
+        "name":"확장자"
       },
       {
         "tooltip":"",
-        "name":"Type",
+        "name":"유형",
         "display_data":[
-          "Surface",
-          "Text"
+          "표면",
+          "텍스트"
         ]
       },
       {
         "tooltip":"",
-        "name":"Recursive"
+        "name":"재귀적"
       }
     ],
-    "name":"Directory Search",
+    "name":"디렉터리 검색 Directory Search",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Outputs"
+        "name":"출력"
       },
       {
         "tooltip":"",
-        "name":"Paths"
+        "name":"경로"
       }
     ]
   },
@@ -21085,7 +21085,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -21185,7 +21185,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -21222,7 +21222,7 @@
       },
       {
         "tooltip":"Draw line along path.",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"Range of the path to draw.",
@@ -21305,7 +21305,7 @@
         "name":"Data Type",
         "display_data":[
           "None",
-          "Path",
+          "경로",
           "Segments"
         ]
       },
@@ -21330,7 +21330,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       },
       {
         "tooltip":"",
@@ -21426,31 +21426,31 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
   "Node_Display_Image":{
-    "tooltip":"Display image on the graph.",
+    "tooltip":"그래프에 이미지를 배치합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Position"
+        "name":"위치"
       },
       {
         "tooltip":"",
-        "name":"Scale"
+        "name":"크기"
       },
       {
         "tooltip":"",
-        "name":"Smooth transform"
+        "name":"부드러운 변환"
       }
     ],
-    "name":"Display Image",
+    "name":"이미지 배치 Display Image",
     "outputs":[
     ]
   },
@@ -21625,7 +21625,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -21653,7 +21653,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -21764,7 +21764,7 @@
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -21772,7 +21772,7 @@
       },
       {
         "tooltip":"",
-        "name":"Loop"
+        "name":"반복"
       },
       {
         "tooltip":"",
@@ -21811,7 +21811,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -21911,7 +21911,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22001,7 +22001,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22049,7 +22049,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22142,7 +22142,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22222,7 +22222,7 @@
       },
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22274,7 +22274,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22338,7 +22338,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22398,43 +22398,43 @@
     ]
   },
   "Node_Display_Text":{
-    "tooltip":"Display text on the graph.",
+    "tooltip":"그래프에 텍스트를 배치합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Color"
+        "name":"색상"
       },
       {
         "tooltip":"",
-        "name":"Text"
+        "name":"텍스트"
       },
       {
         "tooltip":"",
-        "name":"Style",
+        "name":"스타일",
         "display_data":[
-          "Header",
-          "Sub header",
-          "Normal"
+          "제목",
+          "부제목",
+          "일반"
         ]
       },
       {
         "tooltip":"",
-        "name":"Alpha"
+        "name":"투명도"
       },
       {
         "tooltip":"",
-        "name":"Line width"
+        "name":"선 두께"
       },
       {
         "tooltip":"",
-        "name":"Position"
+        "name":"위치"
       },
       {
         "tooltip":"",
-        "name":"Line height"
+        "name":"줄 높이"
       }
     ],
-    "name":"Display Text",
+    "name":"텍스트 배치 Display Text",
     "outputs":[
     ]
   },
@@ -22443,7 +22443,7 @@
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
@@ -22550,7 +22550,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22646,7 +22646,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22711,7 +22711,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22719,27 +22719,27 @@
     "tooltip":"",
     "inputs":[
     ],
-    "name":"Project Data",
+    "name":"프로젝트 데이터 Project Data",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Name"
+        "name":"이름"
       },
       {
         "tooltip":"",
-        "name":"Description"
+        "name":"설명"
       },
       {
         "tooltip":"",
-        "name":"Author"
+        "name":"작성자"
       },
       {
         "tooltip":"",
-        "name":"Contact"
+        "name":"연락처"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
@@ -22799,7 +22799,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22904,7 +22904,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -22989,7 +22989,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23045,7 +23045,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23105,7 +23105,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23183,7 +23183,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23203,7 +23203,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23316,7 +23316,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23429,7 +23429,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23686,7 +23686,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23756,7 +23756,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23815,7 +23815,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23875,7 +23875,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23931,7 +23931,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   },
@@ -23962,7 +23962,7 @@
         "tooltip":"",
         "name":"Palette Select",
         "display_data":[
-          "Loop",
+          "반복",
           "Pingpong",
           "Random"
         ]
@@ -23981,38 +23981,38 @@
     ]
   },
   "Node_Byte_File_Read":{
-    "tooltip":"Load any file to buffer.",
+    "tooltip":"임의의 파일을 버퍼로 불러옵니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ],
-    "name":"Byte File In",
+    "name":"바이트 파일 입력",
     "outputs":[
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       },
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       }
     ]
   },
   "Node_Byte_File_Write":{
-    "tooltip":"Save buffer content to a file.",
+    "tooltip":"버퍼 내용을 파일로 저장합니다.",
     "inputs":[
       {
         "tooltip":"",
-        "name":"Path"
+        "name":"경로"
       },
       {
         "tooltip":"",
-        "name":"Content"
+        "name":"내용"
       }
     ],
-    "name":"Byte File Out",
+    "name":"바이트 파일 내보내기 Byte File Out",
     "outputs":[
     ]
   },
@@ -24084,7 +24084,7 @@
     "outputs":[
       {
         "tooltip":"",
-        "name":"Surface out"
+        "name":"표면 출력"
       }
     ]
   }
