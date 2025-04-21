@@ -1,3 +1,6 @@
+> [!NOTE]
+> 최신버전 `1.19`에서 크래시나면서 작동 안돼는 문제 있음
+
 <p align="center">
   <img src="https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/raw/main/img/ko_banner.png" alt="Pixel Composer"/>
 </p>
