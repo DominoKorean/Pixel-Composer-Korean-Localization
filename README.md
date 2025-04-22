@@ -1,6 +1,3 @@
-> [!NOTE]
-> 최신버전 `1.19`에서 크래시나면서 작동 안돼는 문제 있음
-
 <p align="center">
   <img src="https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/raw/main/img/ko_banner.png" alt="Pixel Composer"/>
 </p>
@@ -15,7 +12,7 @@
 </br>
 
 ## 번역 현황
-> `v1.18.0.4 Steam` en 폴더 비교 기준
+> 깃허브 레퍼지토리 1.19 업데이트 [최근 커밋](https://github.com/Ttanasart-pt/Pixel-Composer/commit/c1a290ad36b687b8ed8455f6ef456ec50e65c242) 기준
 
 
 > [!NOTE]
@@ -27,7 +24,7 @@
     * [ ] nodes.json ( 진행중 )
 
 * 문서 번역
-  * [X] Getting started
+  * [ ] Getting started ( 1.19 업데이트 필요 )
   * [ ] [공식 문서](#pixel-composer-관련-문서)
 
 * 영상 번역 ( 진행 안됨 )
