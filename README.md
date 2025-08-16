@@ -5,6 +5,9 @@
 # Pixel-Composer-Korean-Localization
 [Pixel Composer](https://github.com/Ttanasart-pt/Pixel-Composer)의 번역작업 및 공식 문서, 영상등의 한국어 번역작업을 위한 레퍼지토리입니다.
 
+> [!NOTE]
+> 미대입시생 이슈 프로젝트 중단
+
 </br>
 
 * [한글 패치 다운로드](https://github.com/DominoKorean/Pixel-Composer-Korean-Localization/releases)
